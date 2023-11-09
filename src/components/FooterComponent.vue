@@ -1,6 +1,6 @@
 <template>
 <footer>
-    footer
+    <div class="container">footer</div>
 </footer>
 </template>
 
@@ -11,5 +11,7 @@
 </script>
 
 <style scoped>
-
+footer {
+    background-image: url('/public/img/footer-bg.jpg');
+}
 </style>

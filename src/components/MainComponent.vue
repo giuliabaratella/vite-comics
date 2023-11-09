@@ -1,6 +1,6 @@
 <template>
     <main>
-        main
+        <div class="container"> Content Goes Here </div>
     </main>
 </template>
 
@@ -10,6 +10,15 @@
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+main {
+    color: white;
+    background-color: black;
+    div {
+        padding: 20px;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+   
 </style>
