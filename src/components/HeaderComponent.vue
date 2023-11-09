@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
     import HeaderNav from './HeaderNav.vue'
     export default {
         components:{

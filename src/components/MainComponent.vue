@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container"> Content Goes Here </div>
+        <div class="container py-5"> Content Goes Here </div>
     </main>
 </template>
 
@@ -15,7 +15,6 @@ main {
     color: white;
     background-color: black;
     div {
-        padding: 20px;
         font-size: 2em;
         font-weight: bold;
     }

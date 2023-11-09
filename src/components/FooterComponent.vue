@@ -1,17 +1,22 @@
 <template>
 <footer>
-    <div class="container">footer</div>
+    <FooterLinks/>
+    <FooterSocial/>
 </footer>
 </template>
 
 <script>
+import FooterLinks from './FooterLinks.vue'
+import FooterSocial from './FooterSocial.vue'
+
     export default {
         name: 'FooterComponent',
+        components:{
+            FooterLinks,
+            FooterSocial,
+        },
     }
 </script>
 
 <style scoped>
-footer {
-    background-image: url('/public/img/footer-bg.jpg');
-}
 </style>

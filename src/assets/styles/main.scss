@@ -1,4 +1,25 @@
-@use './partials/variables.scss';
+@use './partials/variables.scss' as *;
 @import 'bootstrap/scss/bootstrap';
+
+:root {
+    --color-primary: #0282f9;
+    --color-light: #ffffff;
+    --color-dark: #1c1c1c;
+    --color-bg-footer: #303030;
+    --color-icons: #797979;
+
+    --font-title: 'Open Sans Condensed', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+ul{
+    padding: 0;
+}
 
 
