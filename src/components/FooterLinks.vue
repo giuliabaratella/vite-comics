@@ -1,17 +1,15 @@
 <template>
-    <div class="footer-links">
-        <div class="container d-flex justify-content-between">
-            <div class="d-flex column-gap-4 pt-4">
-                <div>
-                    <ul>
-                        <li><h4 class="text-uppercase">Dc Comics</h4></li>
-                        <li v-for="el in DcComics"><a href="#" @click.prevent>{{el}}</a></li>
-                    </ul>
-                    <ul>
-                        <li><h4 class="text-uppercase">Shop</h4></li>
-                        <li v-for="el in Shop"><a href="#" @click.prevent>{{el}}</a></li>
-                    </ul>
-                </div>
+    <div class="footer-links overflow-y-auto overflow-x-hidden">
+        <div class="container d-flex justify-content-between h-100">
+            <div class="pt-4 d-flex flex-column flex-wrap column-gap-4 h-100">
+                <ul>
+                    <li><h4 class="text-uppercase">Dc Comics</h4></li>
+                    <li v-for="el in DcComics"><a href="#" @click.prevent>{{el}}</a></li>
+                </ul>
+                <ul>
+                    <li><h4 class="text-uppercase">Shop</h4></li>
+                    <li v-for="el in Shop"><a href="#" @click.prevent>{{el}}</a></li>
+                </ul>
                 <ul>
                     <li><h4 class="text-uppercase">DC</h4></li>
                     <li v-for="el in Dc"><a href="#" @click.prevent>{{el}}</a></li>
@@ -73,20 +71,25 @@
 .footer-links{
     background-image: url('/public/img/footer-bg.jpg');
     background-size: cover;
-        #dc-logo-bg {
-            display: block;
-            height: 350px;
-            width: 600px;
-            object-fit: none;
-        }
+    height: 350px;
     color: var(--color-light);
-        a{
-            color: var(--color-icons);
-            font-weight: 500;
-            font-size: 0.8em;
-            &:hover{
-                    color: var(--color-light);
-                }
-        }
+    #dc-logo-bg {
+        display: block;
+        height: 350px;
+        width: 600px;
+        object-fit: none;
+        overflow-x:visible;
+        z-index:500;
     }
+
+    a{
+        color: var(--color-icons);
+        font-weight: 500;
+        font-size: 0.8em;
+        z-index: 1000;
+        &:hover{
+                color: var(--color-light);
+            }
+    }
+}
 </style>
