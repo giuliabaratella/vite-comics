@@ -24,6 +24,11 @@
         width: 200px;
         height: 200px;
         overflow: hidden;
+        transition: all 0.1s;
+        cursor: pointer;
+    }
+    &:hover{
+        transform: scale(0.97);
     }
 }
 </style>
