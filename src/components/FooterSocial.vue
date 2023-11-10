@@ -24,6 +24,7 @@ import SocialIcons from './SocialIcons.vue'
         button {
             color: var(--color-light);
             border: 2px solid var(--color-primary);
+            border-radius: 0;
         }
     }
 

@@ -43,6 +43,7 @@ nav {
 }
 li {
     font-family: var(--font-title);
+    transform: scale(0.9,1.1);
     font-weight: bold;
     a{
         color: var(--color-dark);

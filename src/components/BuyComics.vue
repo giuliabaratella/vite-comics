@@ -4,7 +4,7 @@
             <ul class="d-flex justify-content-evenly align-items-center row-gap-4 column-gap-4 m-0 py-5 flex-wrap">
                 <li v-for="el in buyComics">
                     <a href="#" @click.prevent>
-                        <div class="d-flex align-items-center">
+                        <div class="box d-flex align-items-center">
                             <div class="pe-2" id="img-box">
                                 <img :src=el.img :alt=el.text>
                             </div>
@@ -60,8 +60,11 @@
             width: 100%;
         }
     }
-    a:hover {
-        background-color: var(--color-dark);
+    a .box{
+        transition: all 0.2s;
+    }
+    a .box:hover {
+        transform: scale(0.97);
     }
 }
 </style>

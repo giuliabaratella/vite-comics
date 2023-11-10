@@ -81,7 +81,11 @@
         overflow-x:visible;
         z-index:500;
     }
-
+    h4{
+        transform: scale(1,1.5);
+        font-weight: 900;
+        font-size: 1em;
+    }
     a{
         color: var(--color-icons);
         font-weight: 500;
@@ -89,7 +93,7 @@
         z-index: 1000;
         &:hover{
                 color: var(--color-light);
-            }
+         }
     }
 }
 </style>

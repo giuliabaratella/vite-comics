@@ -8,8 +8,11 @@
                 <div v-for="el in comicsArray">
                     <Card :img="el.thumb" :title="el.series"/>
                 </div>
+            </div>
+            <div class="text-center">
                 <button class="button btn text-uppercase fw-bold">Load More</button>
             </div>
+
         </div>
     </main>
 </template>
@@ -43,6 +46,7 @@ main {
         position: absolute;
         top:-30px;
         left: 0;
+        transform: scale(0.9,1.1);
         font-size: 1.4em;
     }
     }
@@ -60,6 +64,7 @@ main {
         color: var(--color-light);
         padding: 10px 50px;
         border-radius: 0;
+        transform: scale(0.9,1.1);
     }
 }
    
