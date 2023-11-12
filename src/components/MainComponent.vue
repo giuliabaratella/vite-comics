@@ -34,37 +34,40 @@
 </script>
 
 <style scoped lang="scss">
+@use '../assets/styles/partials/variables.scss' as *;
+
 main {
-    color: var(--color-light);
-    background-color: var(--color-dark);
-    position: relative;
+
+    color: $color-light;
+    background-color: $color-dark;
     .container{
         position: relative;
         .label{
-        padding: 10px 25px;
-        background-color: var(--color-primary);
+        padding: 8px 25px;
+        background-color: $color-primary;
         position: absolute;
-        top:-30px;
+        top:-25px;
         left: 0;
-        transform: scale(0.9,1.1);
-        font-size: 1.4em;
+        @include condensed;
+        font-size: 1em;
     }
     }
     
 
     #jumbo{
         height: 400px;
-        overflow: hidden;
+        // overflow: hidden;
         background-image: url("/img/jumbotron.jpg");
         background-size: cover;
 
     }
     .button {
-        background-color: var(--color-primary);
-        color: var(--color-light);
-        padding: 10px 50px;
+        background-color: $color-primary;
+        color: $color-light;
+        padding: 8px 50px;
         border-radius: 0;
-        transform: scale(0.9,1.1);
+        @include condensed;
+        font-size:0.8em;
     }
 }
    

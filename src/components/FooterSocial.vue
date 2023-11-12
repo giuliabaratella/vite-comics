@@ -19,11 +19,13 @@ import SocialIcons from './SocialIcons.vue'
 </script>
 
 <style scoped lang="scss">
+@use '../assets/styles/partials/variables.scss' as *;
+
 .footer-social {
-        background-color: var(--color-bg-footer);
+        background-color: $color-bg-footer;
         button {
-            color: var(--color-light);
-            border: 2px solid var(--color-primary);
+            color: $color-light;
+            border: 2px solid $color-primary;
             border-radius: 0;
         }
     }

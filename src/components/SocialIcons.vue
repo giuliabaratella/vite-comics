@@ -28,10 +28,12 @@
 </script>
 
 <style scoped lang="scss">
+@use '../assets/styles/partials/variables.scss' as *;
+
 .follow-us{
-            color: var(--color-primary);
+            color:$color-primary;
             font-size: 1.1em;
-            transform: scale(1,1.5);
+            @include condensed;
 
             
         }

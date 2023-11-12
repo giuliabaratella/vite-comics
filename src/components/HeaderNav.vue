@@ -38,17 +38,15 @@
 </script>
 
 <style scoped lang="scss">
-nav {
-    // font-family: $title-font;
-}
+@use '../assets/styles/partials/variables.scss' as *;
+
 li {
-    font-family: var(--font-title);
-    transform: scale(0.9,1.1);
-    font-weight: bold;
+    @include condensed;
+    font-size: 0.8em;
     a{
-        color: var(--color-dark);
+        color: $color-dark;
         &:hover{
-            color: var(--color-primary);
+            color: $color-primary;
         }
     }
 }

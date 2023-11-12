@@ -1,3 +1,4 @@
+
 <template>
     <div id="resources">
         <div class="container">
@@ -18,42 +19,45 @@
 </template>
 
 <script>
-    export default {
-        name: 'BuyComics',
-        data(){
-            return {
-            buyComics:[
-                {
-                img:'/img/buy-comics-digital-comics.png',
-                text:'Digital Comics'
-                },
-                {
-                img:'/img/buy-comics-merchandise.png',
-                text:'DC Merchandise'
-                },
-                {
-                img:'/img/buy-comics-subscriptions.png',
-                text:'Subscription'
-                },
-                {
-                img:'/img/buy-comics-shop-locator.png',
-                text:'Comic Shop Locator'
-                },
-                {
-                img:'/img/buy-dc-power-visa.svg',
-                text:'DC Power Visa'
-                }
-            ]
+
+export default {
+    name: 'BuyComics',
+    data(){
+        return {
+        buyComics:[
+            {
+            img:'/img/buy-comics-digital-comics.png',
+            text:'Digital Comics'
+            },
+            {
+            img:'/img/buy-comics-merchandise.png',
+            text:'DC Merchandise'
+            },
+            {
+            img:'/img/buy-comics-subscriptions.png',
+            text:'Subscription'
+            },
+            {
+            img:'/img/buy-comics-shop-locator.png',
+            text:'Comic Shop Locator'
+            },
+            {
+            img:'/img/buy-dc-power-visa.svg',
+            text:'DC Power Visa'
             }
-
-
+        ]
         }
+
+
     }
+}
 </script>
 
 <style scoped lang="scss">
+@use '../assets/styles/partials/variables.scss' as *;
+
 #resources {
-    background-color: var(--color-primary);
+    background-color: $color-primary;
     #img-box {
         width: 50px;
         img {
@@ -62,9 +66,10 @@
     }
     a .box{
         transition: all 0.2s;
-    }
-    a .box:hover {
+        &:hover {
         transform: scale(0.97);
     }
+    }
+    
 }
 </style>

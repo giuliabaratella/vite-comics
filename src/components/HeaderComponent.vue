@@ -2,7 +2,7 @@
     <header>
         <div class="container d-flex justify-content-between align-items-center ">
             <div id="logo" class="my-3 pe-3">
-                <img src="/public/img/dc-logo.png" alt="DC Comics">
+                <img src="/img/dc-logo.png" alt="DC Comics">
             </div>
             <HeaderNav/>
         </div>

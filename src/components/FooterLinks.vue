@@ -19,7 +19,7 @@
                     <li v-for="el in Sites"><a href="#" @click.prevent>{{el}}</a></li>
                 </ul>
             </div>
-            <img id="dc-logo-bg" src="/public/img/dc-logo-bg.png" alt="DC Logo">
+            <img id="dc-logo-bg" src="/img/dc-logo-bg.png" alt="DC Logo">
         </div>
     </div>
 </template>
@@ -68,11 +68,13 @@
 </script>
 
 <style scoped lang="scss">
+@use '../assets/styles/partials/variables.scss' as *;
+
 .footer-links{
-    background-image: url('/public/img/footer-bg.jpg');
+    background-image: url('/img/footer-bg.jpg');
     background-size: cover;
     height: 350px;
-    color: var(--color-light);
+    color: $color-light;
     #dc-logo-bg {
         display: block;
         height: 350px;
@@ -82,17 +84,16 @@
         z-index:500;
     }
     h4{
-        transform: scale(1,1.5);
-        font-weight: 900;
+        @include condensed;
         font-size: 1em;
     }
     a{
-        color: var(--color-icons);
+        color: $color-icons;
         font-weight: 500;
         font-size: 0.8em;
         z-index: 1000;
         &:hover{
-                color: var(--color-light);
+                color: $color-light;
          }
     }
 }
